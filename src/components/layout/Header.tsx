@@ -1,6 +1,7 @@
 import { Bell, Search, Shield, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -24,6 +25,12 @@ export const Header = () => {
           />
         </div>
         
+        <Link to="/marketplace">
+          <Button variant="default" className="font-semibold">
+            Marketplace 
+          </Button>
+        </Link>
+
         <Button variant="ghost" size="icon" className="relative">
           <Bell className="h-5 w-5" />
           <span className="absolute -top-1 -right-1 h-4 w-4 bg-destructive text-destructive-foreground text-xs rounded-full flex items-center justify-center">
